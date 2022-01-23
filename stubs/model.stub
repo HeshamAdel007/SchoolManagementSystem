@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
+
+class {{ class }} extends Model
+{
+    use HasTranslations;
+
+    protected $table = '{{ class }}s';
+
+    protected $fillable=['Name','Notes'];
+
+    public $timestamps = true;
+
+    public $translatable = ['name'];
+
+
+} // End of Model
